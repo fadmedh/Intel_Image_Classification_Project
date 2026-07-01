@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Exclude datasets and heavy weights
+*.zip
+*.h5
+*.keras
+/dataset/
