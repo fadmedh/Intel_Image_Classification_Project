@@ -13,7 +13,10 @@ This repository contains a comprehensive, end-to-end Deep Learning project for m
 | Model | Parameters | Test Accuracy | Test Loss |
 |--- |--- |--- |--- |
 | **Custom CNN (From Scratch)** | ~1.5M - 5M | 89.03% | 0.3572 |
-| **ResNet50 (Transfer Learning)** | ~23M+ | 92.3%+ | 0.2396 |
+| **ResNet50 (Transfer Learning)** | ~23M+ | 93.16%+ | 0.1942 |
+
+> 📌 **Optimization Note:** 
+> The initial ResNet50 run showed signs of overfitting after epoch 25. To resolve this, **L2 Regularization** was added to the dense layers, and **Early Stopping** (with a patience of 5) was implemented. The callbacks successfully restored the best weights from **Epoch 8**, securing a stable **93.16% Test Accuracy** and significantly dropping the Test Loss to **0.1942**.
 
 ## 🚀 Optimization Steps Taken
 
